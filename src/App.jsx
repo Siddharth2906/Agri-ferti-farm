@@ -24,6 +24,9 @@ import Header from './Components/Header';
 import Content1 from './Components/Content1';
 import { Link } from 'react-router-dom';
 import Content2 from './Components/Content2';
+import Content3 from './Components/Content3';
+import Content4 from './Components/Content4';
+import Content5 from './Components/Content5';
 
 export default function App() {
   return (
@@ -121,6 +124,10 @@ export default function App() {
       </div>
       <Content1/>
       <Content2/>
+      <Content3/>
+      <Content4/>
+      <Content5/>
+
     </>
   );
 }
