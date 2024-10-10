@@ -1,5 +1,5 @@
 import React from 'react'
-
+import earth from"../images/Earth.png"
 const Content5 = () => {
   return (
   <>
@@ -28,7 +28,7 @@ const Content5 = () => {
      </div>
     </div>
 
-    <div className='Content5-box1' >
+    <div className='Content5-box1' id='hide-box1'>
      
     </div>
     <div className='Content5-box1' id='hide-box'>
@@ -38,6 +38,7 @@ const Content5 = () => {
 
 
     </div>
+    
   </section>
 
   </>

@@ -27,6 +27,8 @@ import Content2 from './Components/Content2';
 import Content3 from './Components/Content3';
 import Content4 from './Components/Content4';
 import Content5 from './Components/Content5';
+import Content6 from './Components/Content6';
+import Content7 from './Components/Content7';
 
 export default function App() {
   return (
@@ -127,7 +129,8 @@ export default function App() {
       <Content3/>
       <Content4/>
       <Content5/>
-
+      <Content6/>
+      <Content7/>
     </>
   );
 }
