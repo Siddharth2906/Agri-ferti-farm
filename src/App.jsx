@@ -29,6 +29,8 @@ import Content4 from './Components/Content4';
 import Content5 from './Components/Content5';
 import Content6 from './Components/Content6';
 import Content7 from './Components/Content7';
+import Footer from './Components/Footer';
+import Rights from './Components/Rights';
 
 export default function App() {
   return (
@@ -131,6 +133,8 @@ export default function App() {
       <Content5/>
       <Content6/>
       <Content7/>
+     <Footer/>
+     <Rights/>
     </>
   );
 }
