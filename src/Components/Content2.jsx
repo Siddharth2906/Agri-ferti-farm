@@ -2,7 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
+import chaneImage from "../images/content4image/chane.jpg"
+import fruits from "../images/content4image/fruits.jpg"
+import grains from "../images/content4image/grains.jpg"
+import maize from "../images/content4image/maize.jpg"
+import soyabean from "../images/content4image/soyabean.jpg"
+import wheat from "../images/content4image/wheat 1.jpg"
+import vegetable from "../images/content4image/vegetables.jpg"
+import newvegtable from "../images/content4image/newvegtable.jpg"
 const Content2 = () => {
     return (
         <>
@@ -36,15 +43,16 @@ const Content2 = () => {
                     // onSlideChange={() => console.log('slide change')}
                     // onSwiper={(swiper) => console.log(swiper)}
                     >
-                        <SwiperSlide className='new-slide'>Slide 1</SwiperSlide>
-                        <SwiperSlide className='new-slide'>Slide 2</SwiperSlide>
-                        <SwiperSlide className='new-slide'>Slide 3</SwiperSlide>
-                        <SwiperSlide className='new-slide'>Slide 4</SwiperSlide>
-                        <SwiperSlide className='new-slide'>Slide 5</SwiperSlide>
-                        <SwiperSlide className='new-slide'>Slide 6</SwiperSlide>
-                        <SwiperSlide className='new-slide'>Slide 7</SwiperSlide>
-                        <SwiperSlide className='new-slide'>Slide 8</SwiperSlide>
-                        <SwiperSlide className='new-slide'>Slide 9</SwiperSlide>
+                        <SwiperSlide className='new-slide'><img src={wheat} alt="" />
+                        <div className='inside-newslide'></div></SwiperSlide>
+                        <SwiperSlide className='new-slide'><img src={maize} alt="" /><div className='inside-newslide'></div></SwiperSlide>
+                        <SwiperSlide className='new-slide'><img src={grains} alt="" /><div className='inside-newslide'></div></SwiperSlide>
+                        <SwiperSlide className='new-slide'><img src={vegetable} alt="" /><div className='inside-newslide'></div></SwiperSlide>
+                        <SwiperSlide className='new-slide'><img src={soyabean} alt="" /><div className='inside-newslide'></div></SwiperSlide>
+                        <SwiperSlide className='new-slide'><img src={fruits} alt="" /><div className='inside-newslide'></div></SwiperSlide>
+                        <SwiperSlide className='new-slide'><img src={chaneImage} alt="" /><div className='inside-newslide'></div></SwiperSlide>
+                        <SwiperSlide className='new-slide'><img src={newvegtable} alt="" /><div className='inside-newslide'></div></SwiperSlide>
+                        
                     </Swiper>
                     </div>
                 </div>
