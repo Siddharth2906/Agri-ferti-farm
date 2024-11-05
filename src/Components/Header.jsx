@@ -1,7 +1,9 @@
 import React from 'react'
 import logo from '../images/logo.png'
 import { Link } from 'react-router-dom'
-const Header = () => {
+const Header = ({scroll}) => {
+  
+// console.log(scroll)
   return (
     <>
     <header className='head'>
@@ -13,7 +15,7 @@ const Header = () => {
   <div className='nav'>
     <ul>
       <li><Link to="/" className='active'>Home</Link></li>
-      <li><Link to="#" className='active'>Services</Link></li>
+      <li><Link to="#"  onClick={scroll} className='active'>Services</Link></li>
       <li><Link to="#" className='active'>Farmer Shop</Link></li>
        <li><Link to="" className='active'>Government Scheme</Link></li> 
        <li><Link to="" className='active'>Farmer Corner</Link></li>

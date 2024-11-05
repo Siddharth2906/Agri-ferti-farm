@@ -4,9 +4,9 @@ import conten1 from"../images/contentimg.jpg"
 import fertilizer from"../images/fertilizer bg.png"
 import fruits from"../images/fruitsbg.png"
 
-const Content1 = () => {
+const Content1 = React.forwardRef((props,ref) => {
   return (
-  <section className='content1'>
+  <section className='content1' ref={ref}>
    
     <div className='box1'>
        <img src={conten1} alt="" />
@@ -40,6 +40,6 @@ const Content1 = () => {
 
   </section>
   )
-}
+})
 
 export default Content1

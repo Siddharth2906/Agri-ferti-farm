@@ -6,6 +6,9 @@
 }
 
 body {
+
+ width: 100vw;
+ overflow-x: hidden;
   position: relative;
   height: 100%;
 }
@@ -1631,14 +1634,31 @@ gap: 1rem;
   @media (max-width:1050px) {
     display: none;
  }
+  @media (max-width:550px) {
+    display: block;
+    
+ }
+  @media (max-width:350px) {
+    font-size: 0.5rem;
+    
+ }
+  
 }
-.unhide-box4{
+.inside-content4-box  .unhide-box4{
  display: block;
   @media ( max-width:1700px) {
     display:none;
    }
   @media ( max-width:1050px) {
     display:block;
+   }
+  @media ( max-width:850px) {
+   
+  font-size: 0.8rem;
+   }
+  @media ( max-width:550px) {
+   
+display: none;
    }
 }
 .inside-content4-box .in-box4{
