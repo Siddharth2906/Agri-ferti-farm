@@ -13,6 +13,7 @@ import Footer from './Components/Footer';
 import Rights from './Components/Rights';
 import { useRef } from 'react';
 import Content0 from './Components/Content0';
+import Nav from './Components/Nav';
 
 export default function App() {
 
@@ -27,9 +28,9 @@ export default function App() {
   };
  
   return (
-    <>
+    <>   
       <Header scroll={scrollToChildSection} />
-       
+   
 <Content0/>
       <Content1 ref={targetSectionRef} />
       <Content2/>
