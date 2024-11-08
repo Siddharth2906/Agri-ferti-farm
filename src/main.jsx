@@ -5,11 +5,14 @@ import './index.css'
 import Header from './Components/Header.jsx'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import FarmerCorner from './FarmerCorner.jsx'
+import CompanyHeader from './Components/CompanyHeader'
+import FarmerSignUpForm from './Components/FarmerSignUpForm'
 import CompanyCorner from './CompanyCorner.jsx'
 import Agrimart from './Agrimart.jsx'
 
 const react=createBrowserRouter(
-[{
+[
+  {
   path:'/',
   element:<App/>,
 },
@@ -24,6 +27,10 @@ const react=createBrowserRouter(
 {
   path:'/mart',
   element:<Agrimart/>,
+},
+{
+  path:'*',
+  element: <FarmerSignUpForm/>,
 },
 ]
 )
