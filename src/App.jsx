@@ -11,36 +11,44 @@ import Content6 from './Components/Content6';
 import Content7 from './Components/Content7';
 import Footer from './Components/Footer';
 import Rights from './Components/Rights';
-import { useRef } from 'react';
+import { useContext, useRef, useState } from 'react';
 import Content0 from './Components/Content0';
 import Nav from './Components/Nav';
+import Sidebar from './Components/Sidebar';
+import MyContext from './Context/MyContext';
+
+
 
 export default function App() {
+const Side=useContext(MyContext);
+
 
   const targetSectionRef = useRef(null);
 
   // Function to scroll to the section in the ChildComponent
   const scrollToChildSection = () => {
     // console.log("good");
-      if (targetSectionRef.current) {
-          targetSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-      }
+    if (targetSectionRef.current) {
+      targetSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
- 
+
   return (
-    <>   
-      <Header scroll={scrollToChildSection} />
-   
-<Content0/>
+    <>
+     
+      <Header scroll={scrollToChildSection}/>
+      {Side.isOpen ? <Sidebar scroll={scrollToChildSection} /> : ""}
+      <Content0 />
       <Content1 ref={targetSectionRef} />
-      <Content2/>
-      <Content3/>
-      <Content4/>
-      <Content5/>
-      <Content6/>
-      <Content7/>
-     <Footer/>
-     <Rights/>
+      <Content2 />
+      <Content3 />
+      <Content4 />
+      <Content5 />
+      <Content6 />
+      <Content7 />
+      <Footer />
+      <Rights />
+
     </>
   );
 }

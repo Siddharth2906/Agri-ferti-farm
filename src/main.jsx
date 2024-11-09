@@ -9,6 +9,7 @@ import CompanyHeader from './Components/CompanyHeader'
 import FarmerSignUpForm from './Components/FarmerSignUpForm'
 import CompanyCorner from './CompanyCorner.jsx'
 import Agrimart from './Agrimart.jsx'
+import { MyContextProvider } from './Context/MyContext.jsx'
 
 const react=createBrowserRouter(
 [
@@ -37,9 +38,10 @@ const react=createBrowserRouter(
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-
+     <MyContextProvider>
    <RouterProvider router={react}>
-   <Header/>
+  
    </RouterProvider>
+   </MyContextProvider>
   </StrictMode>,
 )

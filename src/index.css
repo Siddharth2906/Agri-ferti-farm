@@ -25,6 +25,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: sticky;
+  z-index: 3000;
 }
 
 .head .svg {
@@ -63,7 +64,18 @@ body {
 
   color: #ffff;
 }
+.side-button{
+  display: none;
 
+  @media (max-width:800px) {
+    display: block;
+  }
+}
+.nav{
+  @media (max-width:800px) {
+   display: none;
+  }
+}
 .section {
   /* height: 85vh; */
   aspect-ratio: 16 /8;
@@ -1855,7 +1867,8 @@ z-index: -1;
  display: flex;
  gap: 1rem;
   padding: 0.5rem;
-
+  position:sticky;
+  z-index: 3000;
   a {
     text-decoration: none;
     color: black;
