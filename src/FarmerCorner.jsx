@@ -8,6 +8,7 @@ import Content5 from './Components/Content5'
 import { useContext } from 'react'
 import MyContext from './Context/MyContext'
 import FarmerSidebar from './Components/FarmerSidebar'
+import Rights from './Components/Rights'
 
 const FarmerCorner = () => {
   const {isOpen,setIsOpen,toggleSidebar}=useContext(MyContext)
@@ -20,7 +21,7 @@ const FarmerCorner = () => {
    <Content3/>
    <Content4/>
    <Footer/>
-   <Nav/>
+  <Rights/>
    </>
   )
 }
