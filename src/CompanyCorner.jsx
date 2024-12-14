@@ -4,6 +4,8 @@ import CompanyHeader from './Components/CompanyHeader'
 import FarmerSignUpForm from './Components/FarmerSignUpForm'
 import MyContext from './Context/MyContext'
 import CompanySidebar from './Components/CompanySidebar'
+import From from './Components/From'
+
 // import FarmerSignUpForm from './Components/FarmerSignUpForm'
 
 const CompanyCorner = () => {
@@ -13,7 +15,8 @@ const CompanyCorner = () => {
    <Nav/>
    <CompanyHeader/>
    {isOpen?<CompanySidebar/>:""}
-   <FarmerSignUpForm/>
+   {/* <FarmerSignUpForm/> */}
+   <From/>
    </>
   )
 }
