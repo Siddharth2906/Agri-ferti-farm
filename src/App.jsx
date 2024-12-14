@@ -1,6 +1,6 @@
 import './App.css'
 
-import Header from './Components/Header';
+
 import Content1 from './Components/Content1';
 
 import Content2 from './Components/Content2';
@@ -12,10 +12,13 @@ import Content7 from './Components/Content7';
 import Footer from './Components/Footer';
 import Rights from './Components/Rights';
 import { useContext, useRef, useState } from 'react';
-import Content0 from './Components/Content0';
-import Nav from './Components/Nav';
-import Sidebar from './Components/Sidebar';
+
+
+import Header from './Components/Header';
 import MyContext from './Context/MyContext';
+import Content0 from './Components/Content0';
+import Sidebar from './Components/Sidebar';
+
 
 
 
@@ -37,17 +40,17 @@ const Side=useContext(MyContext);
     <>
      
       <Header scroll={scrollToChildSection}/>
-      {Side.isOpen ? <Sidebar scroll={scrollToChildSection} /> : ""}
-      <Content0 />
-      <Content1 ref={targetSectionRef} />
-      <Content2 />
-      <Content3 />
-      <Content4 />
-      <Content5 />
-      <Content6 />
-      <Content7 />
-      <Footer />
-      <Rights />
+      {Side.isOpen ? <Sidebar scroll={scrollToChildSection}/> : ""}
+      <Content0/>
+     <Content1/>
+     <Content2/>
+     <Content3/>
+     <Content4/>
+     <Content5/>
+    <Content6/>
+     <Content7/>
+      <Footer/>
+      <Rights/>
 
     </>
   );

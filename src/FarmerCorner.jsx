@@ -9,6 +9,7 @@ import { useContext } from 'react'
 import MyContext from './Context/MyContext'
 import FarmerSidebar from './Components/FarmerSidebar'
 import Rights from './Components/Rights'
+import { Outlet } from 'react-router-dom'
 
 const FarmerCorner = () => {
   const {isOpen,setIsOpen,toggleSidebar}=useContext(MyContext)
@@ -17,9 +18,7 @@ const FarmerCorner = () => {
    <Nav/>
    <FarmerHeader/>
    {isOpen? <FarmerSidebar/>:""}
-   <Content5/>
-   <Content3/>
-   <Content4/>
+  <Outlet/>
    <Footer/>
   <Rights/>
    </>

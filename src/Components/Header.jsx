@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import MyContext from '../Context/MyContext'
 
+
 const Header = ({scroll }) => {
 
   const{isOpen,setIsOpen,toggleSidebar}=useContext(MyContext)

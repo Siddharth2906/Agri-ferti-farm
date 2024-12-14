@@ -30,7 +30,7 @@ const CompanyHeader = () => {
 
 
 
-          <li><Link to="" className='active'>Profile</Link></li>
+          <li><Link to="profile" className='active'>Profile</Link></li>
           {/* <li><Link to="#" className='active'>Farmer Shop</Link></li> */}
           {/* <li><Link to="" className='active'>Company Corner</Link></li> 
      <li><Link to="" className='active'>Farmer Corner</Link></li> */}

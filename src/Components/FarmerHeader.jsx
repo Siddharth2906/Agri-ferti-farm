@@ -24,8 +24,8 @@ const {isOpen,setIsOpen,toggleSidebar} = useContext(MyContext);
             <li><Link to="#" className='active'>Farmer Shop</Link></li>
             <li className='nav-drop'><Link to="#"  >Information</Link>
               <ul className='dropdown-menu'>
-                <li><Link to="#">Market Prices</Link></li>
-                <li><Link to="#">Weather</Link></li>
+                <li><Link to="pricesDashboard">Market Prices</Link></li>
+                <li><Link to="weather">Weather</Link></li>
                 <li><Link to="#">Government Schemes</Link></li>
                 <li><Link to="#">Farming Techniques</Link></li>
                 <li><Link to="#">Expert call</Link></li>
@@ -35,7 +35,7 @@ const {isOpen,setIsOpen,toggleSidebar} = useContext(MyContext);
 
 
 
-            <li><Link to="" className='active'>Profile</Link></li>
+            <li><Link to="profile" className='active'>Profile</Link></li>
             {/* <li><Link to="#" className='active'>Farmer Shop</Link></li> */}
             {/* <li><Link to="" className='active'>Company Corner</Link></li> 
        <li><Link to="" className='active'>Farmer Corner</Link></li> */}

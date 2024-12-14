@@ -5,8 +5,8 @@ const Nav = () => {
   return (
    <>
     <div className='nav1'>
-        <Link to={"login"}>Login</Link>
-        <Link to={"signup"}>Sign up</Link>
+        <Link to={"form/login"}>Login</Link>
+        <Link to={"form/signup"}>Sign up</Link>
     </div>
    </>
   )

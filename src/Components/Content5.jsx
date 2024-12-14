@@ -1,5 +1,5 @@
 import React from 'react'
-import earth from"../images/Earth.png"
+
 import scheme from "../images/content3image/scheme.jpeg"
 import expert from "../images/content3image/governmentscheme.jpg"
 import weather from '../images/content3image/weather.webp'

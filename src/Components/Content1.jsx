@@ -9,7 +9,7 @@ const Content1 = React.forwardRef((props,ref) => {
   <section className='content1' ref={ref}>
    
     <div className='box1'>
-       <img src={conten1} alt="" />
+       <img src={conten1} alt=""  />
     </div>
     <div className='box2'>
       <h1>Agriculture For Future Development</h1>
@@ -42,4 +42,4 @@ const Content1 = React.forwardRef((props,ref) => {
   )
 })
 
-export default Content1
+export default Content1;

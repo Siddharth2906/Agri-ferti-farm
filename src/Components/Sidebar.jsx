@@ -1,14 +1,13 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
-import UseSidebar from '../Hooks/UseSidebar';
 import MyContext from '../Context/MyContext';
+
 
 const Sidebar = ({ scroll  }) => {
     const {isOpen,setIsOpen,toggleSidebar}=useContext(MyContext)
     return (
        <>
-            
 
             {/* Sidebar menu, only visible in mobile view */}
             <div className="sidebar open">
